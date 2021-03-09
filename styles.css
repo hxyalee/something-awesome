@@ -30,16 +30,51 @@
     height: 250px;
 }
 .pw-list-item{
-    border: 1px #555555 solid;
+    border-top: 1px #555555 solid;
+    border-left: 1px #555555 solid;
+    border-right: 1px #555555 solid;
     padding: 10px
 }
 .pw-list-item:hover{
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .pw-detail{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 300px;
     height: 250px;
-    background-color: brown;
+}
+
+.pw-detail-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pw-detail-detail{
+    width: 60%;
+    border: 1px #555555 solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.pw-username{
+    margin-bottom: 10px;
+}
+.pw-password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pw-detail-pw-btn{
+    background-color: #999;
+    padding: 5px;
+    border-radius: 5px;
+}
+.pw-detail-pw-btn:hover{
+    cursor: pointer;
 }
